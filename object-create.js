@@ -9,5 +9,11 @@ const parent = {
 
 const child = Object.create(parent, { parent: { value: false } })
 
+
+// dave@ubuntu:~/web-dev/js-snippets(main)$ node object-create.js 
+// I am the parent
+// I am not the parent
+
 parent.printMessage()
 child.printMessage()
+
