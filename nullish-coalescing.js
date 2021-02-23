@@ -4,10 +4,10 @@ function myFunc(param){
     return paramValue = null ?? 'default param'
 }
 
-console.log(myFunc())
+console.log(myFunc2()) // returns 'default param'
+console.log(myFunc2(0)) // returns 0
 
-
-// using || short circuit for the above would return 'default param' as 0 is falsy
+// using || short circuit for the above would return 'default param' for second call as 0 is falsy
 
 function myFunc2(param){
     return param || 'default param'
